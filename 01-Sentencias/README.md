@@ -26,7 +26,7 @@ alert('Mundo')
 
 Aquí, JavaScript interpreta el salto de línea como un punto y coma **implícito**. Esto se denomina **inserción automática de punto y coma**.
 
-> [!NOTE] Nota
+> [!NOTE]
 > En la mayoría de los casos, una nueva línea implica un punto y coma. Pero “en la mayoría de los casos” no significa **siempre**!
 
 
@@ -41,7 +41,7 @@ alert( 3 +
 
 El código da como resultado `6` porque JavaScript no inserta punto y coma aquí. Es intuitivamente obvio que si la línea termina con un signo más `+`, es una **expresión incompleta**, un punto y coma aquí sería incorrecto. Y en este caso eso funciona según lo previsto.
 
-> [!WARNING] Tener Cuidado
+> [!WARNING]
 > - En ocasiones JavaScript **falla** al asumir un punto y coma donde realmente se necesita.
 > - Los errores que ocurren en tales casos son bastante difíciles de encontrar y corregir.
 
@@ -55,7 +55,7 @@ alert("Hola");
 
 El resultado del código muestra "Hola", luego 1 y luego 2.
 
-> [!CAUTION] Error que Podemos Obtener   
+> [!CAUTION] 
 > ~~~ JavaScript
 > alert("Hola")
 >
@@ -73,7 +73,7 @@ alert("Hola")[1, 2].forEach(alert);
 
 Tal unión en este caso es simplemente incorrecta. Necesitamos poner un punto y coma después del `alert` para que el código funcione bien.
 
-> [!TIP] Recomendación
+> [!TIP]
 > Colocar puntos y coma entre las sentencias, incluso si están separadas por saltos de línea. Esta regla está ampliamente adoptada por la comunidad.
 
 ### Comentarios
@@ -100,7 +100,7 @@ Los comentarios ayudan a describir lo que hace el código y por qué. Se pueden 
     alert('Mundo');
     ~~~
 
-> [!NOTE] Nota
+> [!NOTE]
 > A veces puede ser útil deshabilitar temporalmente una parte del código:
 > ~~~ JavaScript
 > /* Comentando el código
@@ -111,7 +111,7 @@ Los comentarios ayudan a describir lo que hace el código y por qué. Se pueden 
 
 Se debe tener en cuenta lo siguiente:
 
-> [!CAUTION] ¡Los comentarios anidados no son admitidos!
+> [!CAUTION]
 > No puede haber `/*...*/` dentro de otro `/*...*/`. Eso terminaría en error.
 > ~~~ JavaScript
 > /*
